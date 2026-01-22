@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100vw !important;
+  overflow-x: hidden;
+  background: #f7f7f7;
+}
+
+.certificates-container {
+  display: flex;
+  gap: 10px;
+  animation: scroll 4s linear infinite;
+  /* Adjust duration for smooth scrolling */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* Scroll entire width of the duplicated items */
+  }
+}
+
+/* AntD Classes */
+
+/* Carousal Buttons */
+.slick-arrow {
+  margin: 0 15px 0 15px !important;
+}
+
+.customArrows>.slick-arrow {
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  background: #fff !important;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.customArrows>.slick-arrow::after {
+  width: 20px !important;
+  height: 20px !important;
+  color: black;
+}
+
+.customArrows>.slick-prev::after {
+  position: relative;
+  top: 0%;
+  left: 5%;
+}
+
+.customArrows>.slick-next::after {
+  position: relative;
+  top: 0%;
+  left: -5%;
+}
+
+@media (max-width: 1024px) {
+  .customArrows>.slick-arrow {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    margin: 0 10px 0 10px !important;
+  }
+
+  .customArrows>.slick-arrow {
+    width: 50px;
+    height: 50px;
+  }
+
+  .customArrows>.slick-arrow::after {
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .customArrows>.slick-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .customArrows>.slick-arrow::after {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .slick-arrow {
+    margin: 0 5px 0 5px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .slick-arrow {
+    margin: 0 !important;
+  }
+
+  .customArrows>.slick-arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+  .customArrows>.slick-arrow::after {
+    width: 8px !important;
+    height: 8px !important;
+  }
+}
+
+/* Collapse CSS  */
+
+.ant-collapse {
+  background: #fff !important;
+}
+
+/* Textarea count  */
+
+.ant-input-data-count {
+  font-size: 15px !important;
+}
+
+/* Custom downward shadow */
+.shadow-down {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Footer */
+@media (max-width: 1280px) and (min-width: 680px) {
+  .custom-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 679px) {
+  .custom-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* framer motion a/nimation */
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: bottom;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: top;
+}
+
+
+/* gradient indian flag css  */
+
+.indGradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top left, #34d39988, transparent, #fb923c91);
+  /* Gradient colors */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  /* Smooth transition for the gradient */
+  z-index: 0;
+  border-radius: 16px;
+}
+
+/* Hover state for the gradient */
+.indGradient:hover::before {
+  opacity: 1;
+  border-radius: 16px;
+}
+
+
+/* //3d hover effect  */
+
+/* Outer shadow for 3D effect */
+.outer-shadow {
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3), -6px -6px 10px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Inner shadow for recessed effect */
+.inner-shadow {
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Hover effect for a more pronounced 3D feel */
+.hover-3d:hover {
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4), -8px -8px 12px rgba(255, 255, 255, 0.6);
+}
