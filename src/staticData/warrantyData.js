@@ -3701,6 +3701,12 @@ export const warranty = [
 
 
 
+    { serialNo: 'CWCM4843112025PANA101', purchaseDate: '22/12/2025', warrantyDate: '22/12/2026' },
+    { serialNo: 'CWCM4843112025PANA024', purchaseDate: '22/12/2025', warrantyDate: '22/12/2026' },
+    { serialNo: 'CWCM4843112025PANA103', purchaseDate: '22/12/2025', warrantyDate: '22/12/2026' },
+
+
+
 
 
 
